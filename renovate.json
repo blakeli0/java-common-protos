@@ -10,6 +10,14 @@
     ":maintainLockFilesDisabled",
     ":autodetectPinVersions"
   ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^pom\\.xml"],
+      "matchStrings": ["\\<guava.version\\>(?<currentValue>.*?)\\<\\/guava.version\\>\\n"],
+      "depNameTemplate": "com.google.guava:guava",
+      "datasourceTemplate": "docker"
+    }
+  ]
   "packageRules": [
     {
       "packagePatterns": [
