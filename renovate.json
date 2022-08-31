@@ -17,7 +17,7 @@
       "depNameTemplate": "com.google.guava:guava",
       "datasourceTemplate": "docker"
     }
-  ]
+  ],
   "packageRules": [
     {
       "packagePatterns": [
